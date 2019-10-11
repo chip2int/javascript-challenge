@@ -4,10 +4,10 @@ let $ = jQuery;
 
 // YOUR CODE HERE!
 
-let addToUFOTable = (ttableData) => {
+let addToUFOTable = t => {
 	let row;
 	$('#ufo-table tbody').empty();
-	ttableData.forEach(d => {
+	t.forEach(d => {
 		row = `
 			<tr>
 				<td>${d.datetime}</td>
